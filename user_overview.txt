@@ -1,0 +1,26 @@
+
+GENERATED USER REPORTS: 
+Total users:                             2
+Total tasks:                             2
+
+--------------------------------------------------
+
+USER BREAKDOWN REPORTS:
+admin's task reports:
+Tasks assigned:                           1
+% of total tasks assigned to user:        50.0%
+% of their completed tasks:               0.0%
+% of their pending tasks:                 100.0%
+% of their overdue tasks:                 0.0%
+
+
+
+carito's task reports:
+Tasks assigned:                           1
+% of total tasks assigned to user:        50.0%
+% of their completed tasks:               0.0%
+% of their pending tasks:                 100.0%
+% of their overdue tasks:                 0.0%
+
+
+

@@ -447,26 +447,28 @@ Tasks assigned:                           {u_total_tasks}
 def display_statistics():
     '''If the user is an admin they can display statistics about number of users
                 and tasks.'''
-    if not os.path.exists("user_overview.txt") and not os.path.exists("task_overview.txt") :
+    if not os.path.exists("task_overview.txt") :
         generate_reports()
         with open("task_overview.txt", 'r') as to_file:
             to_data = to_file.read()
             print("\n\n--------------------------------------------------")
             print(to_data)
-        with open("user_overview.txt", 'r') as uo_file:
-            uo_data = uo_file.read()
-            print(uo_data)
-
-
     else: 
         with open("task_overview.txt", 'r') as to_file:
             to_data = to_file.read()
             print("\n\n--------------------------------------------------")
             print(to_data)
+
+    if not os.path.exists("user_overview.txt"):
+        generate_reports()   
         with open("user_overview.txt", 'r') as uo_file:
             uo_data = uo_file.read()
             print(uo_data)
-       
+    else: 
+        with open("user_overview.txt", 'r') as uo_file:
+            uo_data = uo_file.read()
+            print(uo_data)
+
 
 
 def menu():
